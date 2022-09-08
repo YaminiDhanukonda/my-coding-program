@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int f1=0,f2=1,f,n,i,cnt=0;
+	scanf("%d",&n);
+	for(i=0;i<=n;i++)
+	{
+		f=f1+f2;
+		if(f==n)
+		{
+			cnt++;
+			break;
+		}
+		f1=f2;
+		f2=f;
+	}
+	if(cnt==1)
+	printf("YES");
+	else
+	printf("NO");
+	return(0);
+}
